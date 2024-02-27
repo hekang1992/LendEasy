@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LendEasy_selectEwalletView" customModule="LendEasyProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jvr-Yr-gar">
+                    <rect key="frame" x="8" y="394" width="377" height="450"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FlD-pl-KDn">
+                            <rect key="frame" x="0.0" y="0.0" width="377" height="68"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqC-jx-U8p">
+                                    <rect key="frame" x="337" y="20" width="24" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="uWg-Xy-9ds"/>
+                                        <constraint firstAttribute="width" constant="24" id="y8x-7I-NoO"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" backgroundImage="alertViewClose_icon.png"/>
+                                    <connections>
+                                        <action selector="closeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="vlj-Ys-bmo"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select E-wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7r-zU-ozA">
+                                    <rect key="frame" x="14" y="24" width="160" height="29"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                    <color key="textColor" red="0.066666666666666666" green="0.10196078431372549" blue="0.20392156862745098" alpha="1" colorSpace="deviceRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="x7r-zU-ozA" firstAttribute="top" secondItem="FlD-pl-KDn" secondAttribute="top" constant="24" id="2eT-Ej-A00"/>
+                                <constraint firstAttribute="trailing" secondItem="SqC-jx-U8p" secondAttribute="trailing" constant="16" id="HxP-oD-Igm"/>
+                                <constraint firstItem="SqC-jx-U8p" firstAttribute="top" secondItem="FlD-pl-KDn" secondAttribute="top" constant="20" id="KS7-cq-XA4"/>
+                                <constraint firstItem="x7r-zU-ozA" firstAttribute="leading" secondItem="FlD-pl-KDn" secondAttribute="leading" constant="14" id="LGK-Qu-mpU"/>
+                                <constraint firstAttribute="height" constant="68" id="fzS-SP-qrL"/>
+                            </constraints>
+                        </view>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FbV-ar-6cY">
+                            <rect key="frame" x="0.0" y="78" width="377" height="352"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awH-pf-xYb">
+                                    <rect key="frame" x="0.0" y="0.0" width="377" height="342"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="377" id="MiT-DF-JKS"/>
+                                        <constraint firstAttribute="height" constant="342" id="amg-Rw-tNl"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="awH-pf-xYb" secondAttribute="bottom" id="fkm-wv-KoF"/>
+                                <constraint firstItem="awH-pf-xYb" firstAttribute="top" secondItem="FbV-ar-6cY" secondAttribute="top" id="rHI-c8-dtP"/>
+                                <constraint firstItem="awH-pf-xYb" firstAttribute="leading" secondItem="FbV-ar-6cY" secondAttribute="leading" id="vx7-gV-ek1"/>
+                                <constraint firstAttribute="trailing" secondItem="awH-pf-xYb" secondAttribute="trailing" id="wml-Zu-mHx"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95294117647058818" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstItem="FbV-ar-6cY" firstAttribute="top" secondItem="FlD-pl-KDn" secondAttribute="bottom" constant="10" id="EpL-S0-6nc"/>
+                        <constraint firstItem="FlD-pl-KDn" firstAttribute="top" secondItem="Jvr-Yr-gar" secondAttribute="top" id="G2d-5g-1cO"/>
+                        <constraint firstAttribute="bottom" secondItem="FbV-ar-6cY" secondAttribute="bottom" constant="20" id="H2m-dG-bTQ"/>
+                        <constraint firstAttribute="height" constant="450" id="MfP-N1-eyr"/>
+                        <constraint firstAttribute="trailing" secondItem="FbV-ar-6cY" secondAttribute="trailing" id="Wco-iz-oWu"/>
+                        <constraint firstAttribute="trailing" secondItem="FlD-pl-KDn" secondAttribute="trailing" id="ZwF-yb-G4p"/>
+                        <constraint firstItem="FbV-ar-6cY" firstAttribute="leading" secondItem="Jvr-Yr-gar" secondAttribute="leading" id="evQ-I6-L5m"/>
+                        <constraint firstItem="FlD-pl-KDn" firstAttribute="leading" secondItem="Jvr-Yr-gar" secondAttribute="leading" id="kyI-BQ-7gb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jvr-Yr-gar" secondAttribute="trailing" constant="8" id="0P4-HF-sDa"/>
+                <constraint firstItem="Jvr-Yr-gar" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="J5W-Qb-1BN"/>
+                <constraint firstAttribute="bottom" secondItem="Jvr-Yr-gar" secondAttribute="bottom" constant="8" id="bvw-0H-oye"/>
+            </constraints>
+            <connections>
+                <outlet property="alertContentView" destination="Jvr-Yr-gar" id="g8I-ys-J87"/>
+                <outlet property="contentHeightContant" destination="MfP-N1-eyr" id="oT1-Ls-ESM"/>
+                <outlet property="heightContant" destination="amg-Rw-tNl" id="BnE-uB-I15"/>
+                <outlet property="scrollContentView" destination="awH-pf-xYb" id="oGx-ZQ-6l1"/>
+                <outlet property="topBgView" destination="FlD-pl-KDn" id="MUq-Fe-NSD"/>
+                <outlet property="widthContant" destination="MiT-DF-JKS" id="0mD-oN-OtZ"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alertViewClose_icon.png" width="30" height="30"/>
+    </resources>
+</document>

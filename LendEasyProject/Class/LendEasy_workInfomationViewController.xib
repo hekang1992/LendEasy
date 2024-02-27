@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LendEasy_workInfomationViewController" customModule="LendEasyProject" customModuleProvider="target">
+            <connections>
+                <outlet property="backBtn" destination="fCk-gZ-2bU" id="Cg0-Fm-yIr"/>
+                <outlet property="button" destination="nRg-mY-6SU" id="aAC-tI-Kxz"/>
+                <outlet property="contentView" destination="k2s-5j-AaD" id="Fw8-Ia-Z96"/>
+                <outlet property="contentViewHeightConstant" destination="afK-LJ-Wu2" id="nrz-pn-hNk"/>
+                <outlet property="scrollviewWidth" destination="G7Q-zI-aQu" id="qD7-si-fge"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCk-gZ-2bU">
+                    <rect key="frame" x="18" y="55" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="iWW-8d-qGY"/>
+                        <constraint firstAttribute="width" constant="20" id="is2-Cu-irb"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="back.png"/>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="tpR-Ia-Fsh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SN8-QO-8c8">
+                    <rect key="frame" x="125" y="54" width="143" height="22"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" red="0.066666666669999999" green="0.1019607843" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRg-mY-6SU">
+                    <rect key="frame" x="16" y="767" width="361" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="gHj-Zi-gml"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Confirm"/>
+                    <connections>
+                        <action selector="confirmToSubmitAction:" destination="-1" eventType="touchUpInside" id="779-n4-tZ7"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal information protection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gS0-5H-rgb">
+                    <rect key="frame" x="107" y="739" width="191" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.52156862749999999" green="0.5450980392" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="safeTipIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="J1J-YO-tYE">
+                    <rect key="frame" x="89" y="740" width="14" height="14"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOt-a6-BhE" customClass="TPKeyboardAvoidingScrollView">
+                    <rect key="frame" x="0.0" y="196" width="393" height="527"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2s-5j-AaD">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="527"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="393" id="G7Q-zI-aQu"/>
+                                <constraint firstAttribute="height" constant="527" id="afK-LJ-Wu2"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="k2s-5j-AaD" firstAttribute="leading" secondItem="oOt-a6-BhE" secondAttribute="leading" id="2tR-gB-ast"/>
+                        <constraint firstAttribute="trailing" secondItem="k2s-5j-AaD" secondAttribute="trailing" id="PPk-j0-BtH"/>
+                        <constraint firstAttribute="bottom" secondItem="k2s-5j-AaD" secondAttribute="bottom" id="Ppe-sK-bid"/>
+                        <constraint firstItem="k2s-5j-AaD" firstAttribute="top" secondItem="oOt-a6-BhE" secondAttribute="top" id="Yd2-rb-Ywz"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gS0-5H-rgb" firstAttribute="top" secondItem="oOt-a6-BhE" secondAttribute="bottom" constant="16" id="2rB-Z8-Hwg"/>
+                <constraint firstItem="gS0-5H-rgb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="6" id="51F-2M-0CU"/>
+                <constraint firstAttribute="bottom" secondItem="nRg-mY-6SU" secondAttribute="bottom" constant="35" id="5hU-7f-z3L"/>
+                <constraint firstItem="nRg-mY-6SU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Emi-xB-tkQ"/>
+                <constraint firstItem="fCk-gZ-2bU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="55" id="FbH-Ys-2Fg"/>
+                <constraint firstItem="gS0-5H-rgb" firstAttribute="leading" secondItem="J1J-YO-tYE" secondAttribute="trailing" constant="4" id="M2a-LJ-GfL"/>
+                <constraint firstItem="gS0-5H-rgb" firstAttribute="centerY" secondItem="J1J-YO-tYE" secondAttribute="centerY" id="Phm-AP-eA7"/>
+                <constraint firstItem="fCk-gZ-2bU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="TPI-Ra-7fx"/>
+                <constraint firstItem="SN8-QO-8c8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Wzf-jg-mTY"/>
+                <constraint firstAttribute="trailing" secondItem="oOt-a6-BhE" secondAttribute="trailing" id="ZJD-yu-ocW"/>
+                <constraint firstItem="nRg-mY-6SU" firstAttribute="top" secondItem="gS0-5H-rgb" secondAttribute="bottom" constant="12" id="aeq-Yy-WMM"/>
+                <constraint firstItem="oOt-a6-BhE" firstAttribute="top" secondItem="SN8-QO-8c8" secondAttribute="bottom" constant="120" id="dJc-ag-Ny4"/>
+                <constraint firstItem="oOt-a6-BhE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="m2j-DC-mBe"/>
+                <constraint firstAttribute="trailing" secondItem="nRg-mY-6SU" secondAttribute="trailing" constant="16" id="pIl-l8-7kA"/>
+                <constraint firstItem="SN8-QO-8c8" firstAttribute="centerY" secondItem="fCk-gZ-2bU" secondAttribute="centerY" id="rgX-FS-FBO"/>
+            </constraints>
+            <point key="canvasLocation" x="93.89312977099236" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back.png" width="20" height="20"/>
+        <image name="safeTipIcon.png" width="14" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="LendEasy_mineCell" customModule="LendEasyProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5W-bJ-Qhe">
+                        <rect key="frame" x="12" y="0.0" width="296" height="74"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2ow-9g-yQL">
+                                <rect key="frame" x="12" y="25" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="NdA-uI-LC9"/>
+                                    <constraint firstAttribute="width" constant="24" id="hig-8L-Loh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkB-z3-qI7">
+                                <rect key="frame" x="48" y="27" width="40" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.066666666666666666" green="0.10196078431372549" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_enter.png" translatesAutoresizingMaskIntoConstraints="NO" id="1kP-DI-fcS">
+                                <rect key="frame" x="264" y="29" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="P8c-hi-ggf"/>
+                                    <constraint firstAttribute="height" constant="16" id="zxA-8v-Bsw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rkB-z3-qI7" firstAttribute="centerY" secondItem="k5W-bJ-Qhe" secondAttribute="centerY" id="J4a-Bs-tJe"/>
+                            <constraint firstItem="rkB-z3-qI7" firstAttribute="leading" secondItem="2ow-9g-yQL" secondAttribute="trailing" constant="12" id="KqR-V9-y8i"/>
+                            <constraint firstItem="2ow-9g-yQL" firstAttribute="centerY" secondItem="k5W-bJ-Qhe" secondAttribute="centerY" id="SSF-Gf-ekD"/>
+                            <constraint firstItem="2ow-9g-yQL" firstAttribute="leading" secondItem="k5W-bJ-Qhe" secondAttribute="leading" constant="12" id="lto-ag-fIi"/>
+                            <constraint firstAttribute="trailing" secondItem="1kP-DI-fcS" secondAttribute="trailing" constant="16" id="nuJ-TT-CBg"/>
+                            <constraint firstItem="1kP-DI-fcS" firstAttribute="centerY" secondItem="k5W-bJ-Qhe" secondAttribute="centerY" id="oel-Cg-6Ce"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="k5W-bJ-Qhe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Icc-FJ-hRR"/>
+                    <constraint firstItem="k5W-bJ-Qhe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="XVh-Gn-1ik"/>
+                    <constraint firstAttribute="bottom" secondItem="k5W-bJ-Qhe" secondAttribute="bottom" constant="10" id="iII-3q-12H"/>
+                    <constraint firstAttribute="trailing" secondItem="k5W-bJ-Qhe" secondAttribute="trailing" constant="12" id="iTJ-ti-7nc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="mineArrow" destination="1kP-DI-fcS" id="4YA-vF-JiS"/>
+                <outlet property="mineIcon" destination="2ow-9g-yQL" id="kUs-Tz-AOw"/>
+                <outlet property="mineTitleLabel" destination="rkB-z3-qI7" id="2p0-Wi-tsF"/>
+                <outlet property="whiteContentView" destination="k5W-bJ-Qhe" id="dTi-Xe-EE8"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="1.4084507042253522"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mine_enter.png" width="30" height="30"/>
+    </resources>
+</document>

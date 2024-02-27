@@ -1,0 +1,109 @@
+PODS:
+  - AAILiveness (2.0.6):
+    - AAINetwork
+  - AAINetwork (1.0.0)
+  - Alamofire (5.6.3)
+  - AppsFlyerFramework (6.9.0):
+    - AppsFlyerFramework/Main (= 6.9.0)
+  - AppsFlyerFramework/Main (6.9.0)
+  - Hue (5.0.0)
+  - JLRoutes (2.1)
+  - Kingfisher (7.4.1)
+  - Masonry (1.1.0)
+  - MJRefresh (3.7.5)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - ReactiveCocoa (12.0.0):
+    - ReactiveSwift (~> 7.0)
+  - ReactiveObjC (3.1.1)
+  - ReactiveSwift (7.0.0)
+  - SAMKeychain (1.5.3)
+  - SDCycleScrollView (1.82):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.14.2):
+    - SDWebImage/Core (= 5.14.2)
+  - SDWebImage/Core (5.14.2)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (5.0.1)
+  - TPKeyboardAvoiding (1.3.5)
+
+DEPENDENCIES:
+  - "AAILiveness (from `{:http=>\"https://prod-guardian-cv.oss-ap-southeast-5.aliyuncs.com/sdk/iOS-liveness-detection/2.0.6/iOS-Liveness-SDK-V2.0.6.tar.bz2\", :type=>:tbz}`)"
+  - "AAINetwork (from `{:http=>\"https://prod-guardian-cv.oss-ap-southeast-5.aliyuncs.com/sdk/iOS-libraries/AAINetwork/AAINetwork-V1.0.0.tar.bz2\", :type=>:tbz}`)"
+  - Alamofire
+  - AppsFlyerFramework
+  - Hue
+  - JLRoutes
+  - Kingfisher
+  - Masonry
+  - MJRefresh
+  - NVActivityIndicatorView
+  - ReactiveCocoa
+  - ReactiveObjC
+  - SAMKeychain
+  - SDCycleScrollView
+  - SVProgressHUD
+  - SwiftyJSON
+  - TPKeyboardAvoiding
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AppsFlyerFramework
+    - Hue
+    - JLRoutes
+    - Kingfisher
+    - Masonry
+    - MJRefresh
+    - NVActivityIndicatorView
+    - ReactiveCocoa
+    - ReactiveObjC
+    - ReactiveSwift
+    - SAMKeychain
+    - SDCycleScrollView
+    - SDWebImage
+    - SVProgressHUD
+    - SwiftyJSON
+    - TPKeyboardAvoiding
+
+EXTERNAL SOURCES:
+  AAILiveness:
+    :http: https://prod-guardian-cv.oss-ap-southeast-5.aliyuncs.com/sdk/iOS-liveness-detection/2.0.6/iOS-Liveness-SDK-V2.0.6.tar.bz2
+    :type: :tbz
+  AAINetwork:
+    :http: https://prod-guardian-cv.oss-ap-southeast-5.aliyuncs.com/sdk/iOS-libraries/AAINetwork/AAINetwork-V1.0.0.tar.bz2
+    :type: :tbz
+
+CHECKOUT OPTIONS:
+  AAILiveness:
+    :http: https://prod-guardian-cv.oss-ap-southeast-5.aliyuncs.com/sdk/iOS-liveness-detection/2.0.6/iOS-Liveness-SDK-V2.0.6.tar.bz2
+    :type: :tbz
+  AAINetwork:
+    :http: https://prod-guardian-cv.oss-ap-southeast-5.aliyuncs.com/sdk/iOS-libraries/AAINetwork/AAINetwork-V1.0.0.tar.bz2
+    :type: :tbz
+
+SPEC CHECKSUMS:
+  AAILiveness: d7e5184eadd4418a30df39ff36447bda56c3f6c0
+  AAINetwork: d6020f256b8848dc4959dfc90244ad39035938de
+  Alamofire: 8b7a946e9db6f76e93eaa0d4c84e3751633959c9
+  AppsFlyerFramework: 932654224d7482fef4c3fa66197874f62cd1a792
+  Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
+  JLRoutes: d755245322b94227662ea3e43492fdca94e05c5b
+  Kingfisher: cd762a593a61b2fbecf7645c00f9a801a3ebfc9c
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  ReactiveCocoa: 5d10386f0ce09f922006efbf784881c5fade27c5
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  ReactiveSwift: 48c4b9d3b497e8dd20b10300bb1a28ff93550f13
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
+  SDWebImage: b9a731e1d6307f44ca703b3976d18c24ca561e84
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  TPKeyboardAvoiding: d55b3ea7b362540af8fcf36aa3ed2e87bf210cc6
+
+PODFILE CHECKSUM: 8cf720dbf3e7ef4fdd950c1ecbde0789a036b522
+
+COCOAPODS: 1.11.3
